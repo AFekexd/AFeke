@@ -1,0 +1,21 @@
+<div class="centering">
+  <mat-card class="log-card">
+    <form [formGroup]="form" (ngSubmit)="login()">
+      <h3>LOGIN</h3>
+      <mat-form-field class="max-width">
+        <mat-label>E-mail</mat-label>
+        <input type="email" name="email" matInput placeholder="Pl. username@gmail.com" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="max-width">
+        <mat-label>Password</mat-label>
+        <input type="password" name="password" matInput minlength="6" placeholder="Jelszó" formControlName="password">
+      </mat-form-field>
+      <br>
+      <div><button mat-button class="buttons" color="accent" [routerLink]="[ '/registration' ]">REGISTRATION</button>
+      </div>
+      <br>
+      <button type="submit" class="buttons" mat-raised-button color="primary" class="max-width"
+        [disabled]="form.invalid">LOGIN</button>
+    </form>
+  </mat-card>
+</div>

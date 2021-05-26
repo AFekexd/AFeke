@@ -1,0 +1,45 @@
+.centering {
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+mat-form-field {
+  padding: 10px;
+  display: block;
+
+}
+
+mat-hint {
+  padding-right: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background-color: #2727277c;
+  width: 50%;
+}
+
+span {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .centering {
+    margin-top: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  button {
+
+    text-align: center;
+  }
+}

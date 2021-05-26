@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a mat-button [routerLink]="[ '/home' ]">
+      Payment Managment
+    </a>
+    <a [routerLink]="[ '/home' ]" class="homeicon">
+      <mat-icon id="home">home</mat-icon>
+    </a>
+    <button mat-button *ngFor="let item of categories" [routerLink]="[ item.url ]">
+      {{item.title}}&nbsp;
+      <mat-icon>{{item.icon}}</mat-icon>
+    </button>
+    <span style="flex: 1 1;"></span>
+    <button mat-button (click)="logout()">
+      <mat-icon>arrow_back</mat-icon>
+      Log out&nbsp;
+    </button>
+  </mat-toolbar-row>
+
+</mat-toolbar>

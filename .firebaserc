@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fekepaymentmanagment": {
+      "hosting": {
+        "FekePaymentManagment": [
+          "fekepaymentmanagment"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fekeapaymentmanagment"
+  }
+}
